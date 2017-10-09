@@ -30,12 +30,12 @@ iClopen.close()
 TF  = input("Optimize Clusters (T/F): ")
 
 if TF == 'T':
-	print "Beginning to optimize clusters"
-	fResults = cl.optimize(distances,iResults)
-	fClFile = 'fClusters_' + sub + '.pkl'
-	fclOpen = open('fClusters.pkl','wb')
-	pickle.dump(fResults,fclOpen)
-	fclOpen.close()
+    print "Beginning to optimize clusters"
+    fResults = cl.optimize(distances,iResults)
+    fClFile = 'fClusters_' + sub + '.pkl'
+    fclOpen = open('fClusters.pkl','wb')
+    pickle.dump(fResults,fclOpen)
+    fclOpen.close()
 
 
 
